@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — NexGenAiTech | AI, Web, Mobile & SaaS Development</title>
+  <meta name="description" content="Explore NexGenAiTech's full range of services: AI & ML development, web development, mobile apps, SaaS platforms, automation solutions, and UI/UX design." />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .service-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      padding: 80px 0;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    .service-detail:last-child { border-bottom: none; }
+    .service-detail.reverse { direction: rtl; }
+    .service-detail.reverse > * { direction: ltr; }
+    .service-bullet { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; color: var(--text-secondary); font-size: 0.95rem; }
+    .service-bullet::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--gradient-1); flex-shrink: 0; }
+    .service-number-big {
+      font-family: 'Outfit', sans-serif;
+      font-size: 7rem;
+      font-weight: 900;
+      line-height: 1;
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      opacity: 0.15;
+      position: absolute;
+      top: -20px;
+      right: 0;
+    }
+    .service-detail-card {
+      padding: 48px;
+      border-radius: 20px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-detail-card:hover {
+      border-color: rgba(108,99,255,0.3);
+      background: var(--bg-card-hover);
+    }
+    @media (max-width: 768px) {
+      .service-detail { grid-template-columns: 1fr; direction: ltr; }
+      .service-detail.reverse { direction: ltr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-animated"><div class="bg-orb"></div><div class="bg-orb-2"></div></div>
+<div class="grid-overlay"></div>
+<div class="noise"></div>
+
+<div class="offer-strip">
+  🎉 Special Offer: Professional Website at just <strong>₹2,999</strong> — 5 Pages + 1 Year Hosting Free!
+  <a href="https://wa.me/918055698328?text=Hi%20NexGenAiTech%2C%20I'm%20interested%20in%20the%20₹2999%20Website%20Offer." target="_blank">Grab Now →</a>
+</div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="NexGenAiTech Logo" />
+      <span class="nav-logo-text">NexGenAiTech</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="section-badge reveal">⚡ What We Do</div>
+  <h1 class="page-hero-title reveal reveal-delay-1">Our <span class="gradient-text">Premium Services</span></h1>
+  <p class="page-hero-subtitle reveal reveal-delay-2">From AI models to mobile apps — end-to-end digital solutions engineered for growth, scale, and performance.</p>
+</div>
+
+<!-- Services Overview Cards -->
+<section class="section" style="padding-top:0">
+  <div class="services-grid">
+    <a href="#ai" class="glass-card service-card" style="text-decoration:none;cursor:pointer">
+      <div class="service-icon purple">🤖</div>
+      <h3 class="service-title">AI & Machine Learning</h3>
+      <p class="service-desc">Custom AI models, GPT chatbots, computer vision & predictive analytics.</p>
+    </a>
+    <a href="#web" class="glass-card service-card" style="text-decoration:none">
+      <div class="service-icon cyan">💻</div>
+      <h3 class="service-title">Web Development</h3>
+      <p class="service-desc">Business sites, SaaS platforms, admin dashboards & custom web apps.</p>
+    </a>
+    <a href="#mobile" class="glass-card service-card" style="text-decoration:none">
+      <div class="service-icon pink">📱</div>
+      <h3 class="service-title">Mobile Apps</h3>
+      <p class="service-desc">Android & iOS apps with Flutter & React Native — beautiful & fast.</p>
+    </a>
+    <a href="#saas" class="glass-card service-card" style="text-decoration:none">
+      <div class="service-icon violet">⚙️</div>
+      <h3 class="service-title">SaaS Development</h3>
+      <p class="service-desc">Multi-tenant SaaS platforms, subscriptions, admin panels & APIs.</p>
+    </a>
+    <a href="#automation" class="glass-card service-card" style="text-decoration:none">
+      <div class="service-icon green">🔄</div>
+      <h3 class="service-title">Automation</h3>
+      <p class="service-desc">Workflow automation, CRM AI, data processing & business tools.</p>
+    </a>
+    <a href="#ui" class="glass-card service-card" style="text-decoration:none">
+      <div class="service-icon orange">🎨</div>
+      <h3 class="service-title">UI/UX Design</h3>
+      <p class="service-desc">Modern interfaces, user journeys & high-conversion design systems.</p>
+    </a>
+  </div>
+</section>
+
+<!-- Detailed Services -->
+<section style="max-width:1200px;margin:0 auto;padding:0 24px">
+
+  <!-- AI & ML -->
+  <div class="service-detail" id="ai">
+    <div class="reveal">
+      <div class="section-badge" style="margin-bottom:20px">🤖 Service 01</div>
+      <h2 style="font-family:'Outfit',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;line-height:1.2;margin-bottom:20px">AI & <span class="gradient-text">Machine Learning</span></h2>
+      <p style="color:var(--text-secondary);line-height:1.9;font-size:0.97rem;margin-bottom:24px">We build intelligent systems that learn, adapt, and make decisions — giving your business a genuine competitive edge powered by cutting-edge artificial intelligence and machine learning.</p>
+      <div class="service-bullet">Custom AI model development & fine-tuning</div>
+      <div class="service-bullet">GPT-powered chatbots & virtual assistants</div>
+      <div class="service-bullet">Computer vision & image recognition systems</div>
+      <div class="service-bullet">Predictive analytics & business intelligence</div>
+      <div class="service-bullet">NLP & sentiment analysis tools</div>
+      <div class="service-bullet">AI automation tools & intelligent agents</div>
+      <div style="margin-top:28px"><a href="contact.html" class="btn btn-primary">Get AI Solution →</a></div>
+    </div>
+    <div class="service-detail-card reveal reveal-delay-1">
+      <div class="service-number-big">01</div>
+      <div style="font-size:3.5rem;margin-bottom:20px">🤖</div>
+      <h3 style="font-family:'Outfit',sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:16px">Tech We Use</h3>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+        <span class="tag" style="font-size:0.82rem">OpenAI GPT-4</span>
+        <span class="tag" style="font-size:0.82rem">TensorFlow</span>
+        <span class="tag" style="font-size:0.82rem">PyTorch</span>
+        <span class="tag" style="font-size:0.82rem">LangChain</span>
+        <span class="tag" style="font-size:0.82rem">Python</span>
+        <span class="tag" style="font-size:0.82rem">scikit-learn</span>
+        <span class="tag" style="font-size:0.82rem">Hugging Face</span>
+        <span class="tag" style="font-size:0.82rem">Computer Vision</span>
+      </div>
+      <div style="padding:20px;background:rgba(108,99,255,0.08);border-radius:12px">
+        <div style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:8px">🚀 Typical Timeline</div>
+        <div style="font-weight:700;font-size:1.1rem">2–8 Weeks</div>
+        <div style="font-size:0.82rem;color:var(--text-secondary);margin-top:4px">Depending on model complexity</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Web Dev -->
+  <div class="service-detail reverse" id="web">
+    <div class="service-detail-card reveal">
+      <div class="service-number-big">02</div>
+      <div style="font-size:3.5rem;margin-bottom:20px">💻</div>
+      <h3 style="font-family:'Outfit',sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:16px">Tech We Use</h3>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+        <span class="tag" style="font-size:0.82rem">React.js</span>
+        <span class="tag" style="font-size:0.82rem">Next.js 14</span>
+        <span class="tag" style="font-size:0.82rem">Node.js</span>
+        <span class="tag" style="font-size:0.82rem">Express.js</span>
+        <span class="tag" style="font-size:0.82rem">MongoDB</span>
+        <span class="tag" style="font-size:0.82rem">PostgreSQL</span>
+        <span class="tag" style="font-size:0.82rem">Tailwind CSS</span>
+        <span class="tag" style="font-size:0.82rem">Firebase</span>
+      </div>
+      <div style="padding:20px;background:rgba(0,212,255,0.06);border-radius:12px">
+        <div style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:8px">🚀 Typical Timeline</div>
+        <div style="font-weight:700;font-size:1.1rem">1–6 Weeks</div>
+        <div style="font-size:0.82rem;color:var(--text-secondary);margin-top:4px">From landing page to full web app</div>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="section-badge" style="margin-bottom:20px">💻 Service 02</div>
+      <h2 style="font-family:'Outfit',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;line-height:1.2;margin-bottom:20px">Web <span class="gradient-text">Development</span></h2>
+      <p style="color:var(--text-secondary);line-height:1.9;font-size:0.97rem;margin-bottom:24px">We build blazing-fast, SEO-optimized, visually stunning websites and web applications that not only look great but convert visitors into customers.</p>
+      <div class="service-bullet">Business & corporate websites</div>
+      <div class="service-bullet">SaaS platforms & multi-tenant systems</div>
+      <div class="service-bullet">Admin dashboards & analytics portals</div>
+      <div class="service-bullet">E-commerce & marketplace platforms</div>
+      <div class="service-bullet">Custom web applications & portals</div>
+      <div class="service-bullet">REST API & GraphQL backend development</div>
+      <div style="margin-top:28px"><a href="contact.html" class="btn btn-primary">Start Web Project →</a></div>
+    </div>
+  </div>
+
+  <!-- Mobile -->
+  <div class="service-detail" id="mobile">
+    <div class="reveal">
+      <div class="section-badge" style="margin-bottom:20px">📱 Service 03</div>
+      <h2 style="font-family:'Outfit',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;line-height:1.2;margin-bottom:20px">Mobile App <span class="gradient-text">Development</span></h2>
+      <p style="color:var(--text-secondary);line-height:1.9;font-size:0.97rem;margin-bottom:24px">Native-quality cross-platform mobile applications with stunning UI/UX, optimized performance, and seamless user experiences on both iOS and Android.</p>
+      <div class="service-bullet">Android & iOS native apps</div>
+      <div class="service-bullet">Cross-platform apps with Flutter</div>
+      <div class="service-bullet">React Native applications</div>
+      <div class="service-bullet">UI/UX optimized mobile interfaces</div>
+      <div class="service-bullet">App Store & Play Store deployment</div>
+      <div class="service-bullet">API integration & push notifications</div>
+      <div style="margin-top:28px"><a href="contact.html" class="btn btn-primary">Build Your App →</a></div>
+    </div>
+    <div class="service-detail-card reveal reveal-delay-1">
+      <div class="service-number-big">03</div>
+      <div style="font-size:3.5rem;margin-bottom:20px">📱</div>
+      <h3 style="font-family:'Outfit',sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:16px">Tech We Use</h3>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+        <span class="tag" style="font-size:0.82rem">Flutter</span>
+        <span class="tag" style="font-size:0.82rem">React Native</span>
+        <span class="tag" style="font-size:0.82rem">Dart</span>
+        <span class="tag" style="font-size:0.82rem">Firebase</span>
+        <span class="tag" style="font-size:0.82rem">Redux</span>
+        <span class="tag" style="font-size:0.82rem">REST APIs</span>
+        <span class="tag" style="font-size:0.82rem">App Store Optimization</span>
+      </div>
+      <div style="padding:20px;background:rgba(255,107,107,0.06);border-radius:12px">
+        <div style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:8px">🚀 Typical Timeline</div>
+        <div style="font-weight:700;font-size:1.1rem">4–12 Weeks</div>
+        <div style="font-size:0.82rem;color:var(--text-secondary);margin-top:4px">MVP to full-featured app</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SaaS -->
+  <div class="service-detail reverse" id="saas">
+    <div class="service-detail-card reveal">
+      <div class="service-number-big">04</div>
+      <div style="font-size:3.5rem;margin-bottom:20px">⚙️</div>
+      <h3 style="font-family:'Outfit',sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:16px">What You Get</h3>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px">
+        <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--text-secondary)"><span style="color:var(--success)">✅</span> Multi-tenant Architecture</div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--text-secondary)"><span style="color:var(--success)">✅</span> Subscription & Billing (Stripe/Razorpay)</div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--text-secondary)"><span style="color:var(--success)">✅</span> Super Admin + User Dashboards</div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--text-secondary)"><span style="color:var(--success)">✅</span> API Integrations & Webhooks</div>
+        <div style="display:flex;align-items:center;gap:10px;font-size:0.9rem;color:var(--text-secondary)"><span style="color:var(--success)">✅</span> Analytics & Reporting</div>
+      </div>
+      <div style="padding:20px;background:rgba(168,85,247,0.08);border-radius:12px">
+        <div style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:8px">🚀 Typical Timeline</div>
+        <div style="font-weight:700;font-size:1.1rem">6–16 Weeks</div>
+        <div style="font-size:0.82rem;color:var(--text-secondary);margin-top:4px">Full SaaS product delivery</div>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="section-badge" style="margin-bottom:20px">⚙️ Service 04</div>
+      <h2 style="font-family:'Outfit',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;line-height:1.2;margin-bottom:20px">SaaS Product <span class="gradient-text">Development</span></h2>
+      <p style="color:var(--text-secondary);line-height:1.9;font-size:0.97rem;margin-bottom:24px">End-to-end SaaS platform development — from architecture design to deployment. We build products that can support thousands of users from day one.</p>
+      <div class="service-bullet">Multi-tenant SaaS architecture</div>
+      <div class="service-bullet">Subscription & payment system integration</div>
+      <div class="service-bullet">Admin & user management panels</div>
+      <div class="service-bullet">REST API & third-party integrations</div>
+      <div class="service-bullet">Analytics, reporting & dashboards</div>
+      <div class="service-bullet">Auto-scaling & cloud deployment</div>
+      <div style="margin-top:28px"><a href="contact.html" class="btn btn-primary">Launch Your SaaS →</a></div>
+    </div>
+  </div>
+
+  <!-- Automation -->
+  <div class="service-detail" id="automation">
+    <div class="reveal">
+      <div class="section-badge" style="margin-bottom:20px">🔄 Service 05</div>
+      <h2 style="font-family:'Outfit',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;line-height:1.2;margin-bottom:20px">Automation <span class="gradient-text">Solutions</span></h2>
+      <p style="color:var(--text-secondary);line-height:1.9;font-size:0.97rem;margin-bottom:24px">Eliminate repetitive work and free your team for what matters. We build intelligent automation systems that work 24/7, making your business faster and more efficient.</p>
+      <div class="service-bullet">Business workflow automation</div>
+      <div class="service-bullet">CRM automation & lead management</div>
+      <div class="service-bullet">AI-based business tools & bots</div>
+      <div class="service-bullet">Data extraction & processing pipelines</div>
+      <div class="service-bullet">Email & marketing automation</div>
+      <div class="service-bullet">Report generation & scheduling</div>
+      <div style="margin-top:28px"><a href="contact.html" class="btn btn-primary">Automate Your Business →</a></div>
+    </div>
+    <div class="service-detail-card reveal reveal-delay-1">
+      <div class="service-number-big">05</div>
+      <div style="font-size:3.5rem;margin-bottom:20px">🔄</div>
+      <h3 style="font-family:'Outfit',sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:16px">ROI You Can Expect</h3>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:28px">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(16,185,129,0.08);border-radius:10px">
+          <span style="font-size:0.9rem;color:var(--text-secondary)">Time Saved</span>
+          <span style="font-weight:700;color:var(--success)">60–80%</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(16,185,129,0.08);border-radius:10px">
+          <span style="font-size:0.9rem;color:var(--text-secondary)">Error Reduction</span>
+          <span style="font-weight:700;color:var(--success)">95%+</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(16,185,129,0.08);border-radius:10px">
+          <span style="font-size:0.9rem;color:var(--text-secondary)">Cost Reduction</span>
+          <span style="font-weight:700;color:var(--success)">40–60%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UI/UX -->
+  <div class="service-detail reverse" id="ui">
+    <div class="service-detail-card reveal">
+      <div class="service-number-big">06</div>
+      <div style="font-size:3.5rem;margin-bottom:20px">🎨</div>
+      <h3 style="font-family:'Outfit',sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:16px">Design Tools</h3>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+        <span class="tag" style="font-size:0.82rem">Figma</span>
+        <span class="tag" style="font-size:0.82rem">Adobe XD</span>
+        <span class="tag" style="font-size:0.82rem">Framer</span>
+        <span class="tag" style="font-size:0.82rem">Principle</span>
+        <span class="tag" style="font-size:0.82rem">Motion Design</span>
+        <span class="tag" style="font-size:0.82rem">Design Systems</span>
+      </div>
+      <div style="padding:20px;background:rgba(249,115,22,0.06);border-radius:12px">
+        <div style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:8px">🎯 Average Impact</div>
+        <div style="font-weight:700;font-size:1.1rem;color:#F97316">+40% Conversion Rate</div>
+        <div style="font-size:0.82rem;color:var(--text-secondary);margin-top:4px">Post redesign on average</div>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="section-badge" style="margin-bottom:20px">🎨 Service 06</div>
+      <h2 style="font-family:'Outfit',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:800;line-height:1.2;margin-bottom:20px">UI/UX <span class="gradient-text">Design</span></h2>
+      <p style="color:var(--text-secondary);line-height:1.9;font-size:0.97rem;margin-bottom:24px">Design that doesn't just look beautiful — it converts. We create user-centric interfaces that make complex products feel effortless and drive measurable business results.</p>
+      <div class="service-bullet">Modern interface design & design systems</div>
+      <div class="service-bullet">User research & journey mapping</div>
+      <div class="service-bullet">Wireframing & interactive prototypes</div>
+      <div class="service-bullet">High-conversion landing page design</div>
+      <div class="service-bullet">Mobile-first responsive layouts</div>
+      <div class="service-bullet">Brand identity & visual style guides</div>
+      <div style="margin-top:28px"><a href="contact.html" class="btn btn-primary">Start Design Project →</a></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<div class="cta-wrapper">
+  <div class="cta-banner reveal">
+    <h2>Not Sure Which Service You Need?</h2>
+    <p>Let's have a <span class="gradient-text">free 30-minute consultation</span> to understand your goals and recommend the perfect solution.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn btn-primary">🚀 Book Free Consultation</a>
+      <a href="https://wa.me/918055698328" target="_blank" class="btn btn-accent">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="NexGenAiTech" /><span class="nav-logo-text">NexGenAiTech</span></a>
+      <p>Building Intelligent Digital Solutions for the Future. Empowering businesses through AI-driven innovation.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link">in</a><a href="#" class="social-link">𝕏</a>
+        <a href="#" class="social-link">🐙</a><a href="https://wa.me/918055698328" class="social-link">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li><li><a href="industries.html">Industries</a></li>
+        <li><a href="process.html">Our Process</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#ai">AI Development</a></li><li><a href="#web">Web Development</a></li>
+        <li><a href="#mobile">Mobile Apps</a></li><li><a href="#saas">SaaS Solutions</a></li>
+        <li><a href="#automation">Automation</a></li><li><a href="#ui">UI/UX Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <div class="footer-contact-item"><span>📧</span><a href="mailto:hello@nexgenaitech.online">hello@nexgenaitech.online</a></div>
+      <div class="footer-contact-item"><span>📞</span><a href="tel:+918055698328">+91 80556 98328</a></div>
+      <div class="footer-contact-item"><span>📍</span><span>Uttar Pradesh, India</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024–2026 NexGenAiTech. All rights reserved. | Founded by <strong>Jahid Ansari</strong></p>
+    <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+  </div>
+</footer>
+
+<a href="https://wa.me/918055698328" target="_blank" class="whatsapp-btn">💬</a>
+<button class="back-top" id="backTop">↑</button>
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+  document.getElementById('backTop').classList.toggle('visible', window.scrollY > 400);
+});
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => { navToggle.classList.toggle('open'); navLinks.classList.toggle('open'); });
+document.getElementById('backTop').addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+setTimeout(() => document.querySelectorAll('.reveal').forEach(el => { if(el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible'); }), 100);
+</script>
+</body>
+</html>
